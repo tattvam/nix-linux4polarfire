@@ -11,6 +11,7 @@ self: with self;
     inherit kconfigCommon;
   };
 
+/*
   uBoot = callPackage ./u-boot {};
 
   dtbHelpers = callPackage ./dtb-helpers {};
@@ -29,10 +30,7 @@ self: with self;
     ];
   };
 
-  soc-term = callPackage ./platforms/qemu/soc-term {};
-
-
-  raspios = callPackage ./platforms/raspberry-pi/raspios {};
-  raspberry-pi-firmware = callPackage ./platforms/raspberry-pi/firmware {};
+  #soc-term = callPackage ./platforms/qemu/soc-term {};
+*/
 
 }
